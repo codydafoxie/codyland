@@ -1,0 +1,133 @@
+.box {
+  position: fixed;
+  inset: 0;
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+}
+html, body {margin: 0; height: 100%; overflow: hidden}
+.content {
+  padding-top: 20px;
+  text-align: center;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.little-wrapper {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: khaki;
+}
+
+.navbar {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAS0lEQVQYV2P8f5XhP6M2AyMDFID4ICa6GFwBSBJZE7oBKCYhm4KuEawQ3SRkq2FyjNgUwdwLswGshmiFRFuNHCwEPYNNMUbwEBvgADK5TVfril8CAAAAAElFTkSuQmCC)
+    repeat;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.wordart-wrapper {
+  filter: drop-shadow(2px 2px 0px rgba(130, 140, 251, 0.8));
+}
+
+.purple-wordart {
+  background: linear-gradient(183deg, #6000ca 10%, #ca00cd 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: "Impact";
+  transform: skewY(-8deg) scaleY(1.3) scaleX(0.8);
+  font-size: 100px;
+  text-align: center;
+}
+
+.animated-rainbow {
+  font-family: Arial Black, Gadget, sans-serif;
+  background: linear-gradient(
+    to left,
+    #f00,
+    #ff2b00,
+    #f50,
+    #ff8000,
+    #fa0,
+    #ffd500,
+    #ff0,
+    #d4ff00,
+    #af0,
+    #80ff00,
+    #5f0,
+    #2bff00,
+    #0f0,
+    #00ff2a,
+    #0f5,
+    #00ff80,
+    #0fa,
+    #00ffd5,
+    #0ff,
+    #00d5ff,
+    #0af,
+    #0080ff,
+    #05f,
+    #002aff,
+    #00f,
+    #2b00ff,
+    #50f,
+    #8000ff,
+    #a0f,
+    #d400ff,
+    #f0f,
+    #ff00d4,
+    #f0a,
+    #ff0080,
+    #f05,
+    #ff002b,
+    #f00
+  );
+  animation: rainbow-move-left-right 5s linear infinite alternate;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes rainbow-move-left-right {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -500px 0;
+  }
+}
+
+.icons-left {
+   display: inline-grid;
+   position: fixed;
+}
+.icons-right {
+  display: inline-grid;
+  float: right;
+}
+
+.icon {
+  padding: 1px 1px 1px 1px;
+}
+
+footer {
+  font-size: small;
+}
